@@ -1,7 +1,7 @@
 ---
 layout: layout.liquid
 title: Now
-permalink: now.html
+permalink: now
 ---
 
 <section>
