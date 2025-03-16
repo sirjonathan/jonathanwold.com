@@ -1,0 +1,77 @@
+/* Classic Style - Inspired by Jonathan's 2000s WordPress tutorial */
+
+body {
+  background: #1e4f86 url('https://www.transparenttextures.com/patterns/knitted-netting.png');
+  color: #000;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 20px;
+}
+
+#background-wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+  background: #fff;
+  border: 3px solid #000;
+  padding: 20px;
+}
+
+header {
+  background: #b0d4f1;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: 3px double #000;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+header nav a {
+  color: #000080;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px 10px;
+  background: #f9f9f9;
+  border: 1px dashed #999;
+}
+
+h1 {
+  font-size: 24px;
+  background: #e3f1ff;
+  border: 2px solid #b0d4f1;
+  padding: 10px;
+}
+
+strong {
+  color: #900;
+}
+
+a {
+  color: #0044cc;
+}
+
+a:hover {
+  background: #ffff99;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 10px;
+  border-top: 2px dashed #333;
+  font-size: 12px;
+  color: #333;
+  text-align: center;
+}

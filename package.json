@@ -1,0 +1,23 @@
+{
+  "name": "jonathanwold.com",
+  "version": "1.0.0",
+  "description": "A work in progress.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Jonathan Wold",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirjonathan/jonathanwold.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sirjonathan/jonathanwold.com/issues"
+  },
+  "homepage": "https://github.com/sirjonathan/jonathanwold.com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

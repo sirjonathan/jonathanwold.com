@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="{{ site.description }}">
+  <title>{{ title }}</title>
+  <link id="theme-stylesheet" rel="stylesheet" href="/styles/default.css" />
+</head>
+<body>
+  <div id="background-wrapper">
+	{% include "header.liquid" %}
+	<main>
+	  {{ content }}
+	</main>
+	{% include "footer.liquid" %}
+  </div>
+  
+  <script>
+	const switcher = document.getElementById('style-switcher');
+	const themeLink = document.getElementById('theme-stylesheet');
+  
+	// Apply stored theme on page load
+	const storedTheme = localStorage.getItem('theme');
+	if (storedTheme) {
+	  themeLink.href = `/styles/${storedTheme}.css`;
+	  switcher.value = storedTheme;
+	}
+  
+	// Listen for changes
+	switcher.addEventListener('change', () => {
+	  const selectedTheme = switcher.value;
+	  themeLink.href = `/styles/${selectedTheme}.css`;
+	  localStorage.setItem('theme', selectedTheme);
+	});
+  </script>
+  
+</body>
+</html>
