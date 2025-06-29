@@ -1,0 +1,402 @@
+/* First off, let's set the stage */
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'EB Garamond', serif;
+  background-image: url('/images/bg-body.png');
+  background-repeat: repeat;
+  overflow-x: auto;
+}
+
+#background-wrapper {
+  min-width: 900px;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: clamp(900px, 60vw, 900px); 
+  aspect-ratio: 1.618 / 1; /* golden ratio */
+  max-height: 100vh;
+  border: 1px solid var(--accent-dark);
+  display: grid;
+  grid-template-columns: 61.8% 9.02% 5.58% 23.6%;
+  grid-template-rows: 61.8% 9.02% 5.58% 23.6%;
+  grid-template-areas:
+    "one two two two"
+    "one five six three"
+    "one five seven three"
+    "one four four three";
+}
+
+/* Let's set our colors. We'll call the scheme "cool blue" */
+body.style-coolblue {
+  --bg-one:   #f7fcf2; 
+  --bg-two:   #dceef7;
+  --bg-three: #bcd9ec; 
+  --bg-four:  #8cb9d9;
+  --bg-five:  #5e92bd; 
+  --bg-six:    #336699; 
+  --bg-seven: #3e6e99; 
+  --bg-nav:     #dceef7;
+  --bg-portal: #336699; 
+  --color-link:  #3e6e99;  
+  --accent-dark: #333;
+  --accent-light: #ccc;
+}
+
+.area.one    { background-color: var(--bg-one); }
+.area.two    { background-color: var(--bg-two); }
+.area.three  { background-color: var(--bg-three); }
+.area.four   { background-color: var(--bg-four); }
+.area.five   { background-color: var(--bg-five); }
+.area.six    { background-color: var(--bg-six); }
+.area.seven  { background-color: var(--bg-seven); }
+
+.area.two nav {
+  background-color: var(--bg-nav);
+}
+
+body[class*="style-"] a {
+  color: var(--color-link);
+  text-decoration-color: var(--color-link);
+  text-underline-offset: 2px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+body[class*="style-"] a:hover {
+  color: color-mix(in srgb, var(--color-link), black 20%);
+  text-decoration-thickness: 2px;
+}
+
+.area {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0.5px solid var(--accent-dark);
+}
+
+.area.one {
+  grid-area: one;
+  padding: 2rem;
+  line-height: 1.6;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  border-right-color: var(--accent-light);
+}
+
+.area.one p {
+  margin-bottom: 1em;
+  max-width: 60ch;
+}
+
+.area.one p.signature {
+  font-style: italic;
+  text-align: left;
+}
+.area.two {
+  grid-area: two;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.area.two h2 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+  padding: 1rem 0 0.5rem 0;
+  text-align: center;
+  color: var(--accent-dark); /* Tie into theme */
+  letter-spacing: 1px;
+  border-bottom: 1px solid var(--accent-light);
+}
+
+.area.two blockquote {
+ font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.6;  
+  font-weight: 400;
+  color: var(--accent-dark);
+  padding: 0 2.5rem 0 3.5rem;
+  margin: 0;
+  position: relative;
+}
+
+.area.two blockquote::before {
+  content: "“";
+  font-size: 4rem;
+  color: var(--accent-light);
+  position: absolute;
+  top: 3px;
+  left: 18px;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.area.two blockquote footer {
+  font-size: 0.9rem;
+  font-style: normal
+  margin-top: 0.5rem;
+  color: var(--color-link);
+  text-align: right;
+}
+
+.area.two blockquote a {
+  font-style: italic;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.area.three {
+  grid-area: three;
+}
+
+.area.three.photo {
+  display: block; /* removes inherited flex */
+}
+.area.three.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  display: block;
+}
+
+.area.four {
+  grid-area: four;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem 0;
+  gap: 0.75rem;
+}
+
+.area.four h3 {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.7rem; 
+  padding: 0;
+  text-align: center;
+  color: var(--accent-dark); /* Tie into theme */
+  letter-spacing: 1px;
+  margin: 10px 0 0 0;;
+}
+
+/* Style for the book citation container */
+a.book {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  margin: 0.5rem 0;
+}
+
+/* Style for the book title */
+a.book cite {
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* Style for the author name */
+a.book .author {
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+  margin-top: 0.25rem;
+}
+
+.area.five {
+  grid-area: five;
+  justify-content: center;
+  align-items: center;
+}
+.area.six {
+  grid-area: six;
+}
+.area.seven {
+  grid-area: seven;
+  position: relative;
+  border-top: none;
+}
+
+.angled-portal-label {
+  position: absolute;
+  top: 8px;
+  left: 4px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.6rem;
+  color: color-mix(in srgb, var(--accent-light), var(--accent-dark) 20%);
+  display: flex;
+  align-items: center;
+  animation: bounceArrow 1.5s infinite;
+  gap: 0.25em;
+}
+
+.curved-arrow {
+  font-size: 1.2rem;
+}
+
+.angled-portal-label .arrow {
+  font-size: 0.7rem; 
+  transform: translateY(-2px); /* Nudges arrow upward */
+}
+
+@keyframes bounceArrow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+/* Portal Container */
+.portal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Portal Link */
+.portal-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  border-radius: 100%;
+  background-color: var(--bg-portal); 
+  color: transparent !important;
+  text-decoration: none;
+  position: relative;
+  animation: pulse 2s infinite;
+}
+
+/* Pulsing Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+}
+
+/* Pulsing Glow Effect */
+.portal-link::before {
+  content: '';
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  border-radius: 50%;
+  background: radial-gradient(circle, color-mix(in srgb, var(--bg-portal), white 40%), transparent);
+  animation: pulse 2s infinite;
+}
+
+/* Hover Effect */
+.portal-link:hover {
+  box-shadow: 0 0 25px color-mix(in srgb, var(--bg-portal), white 40%);
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+}
+
+
+nav {
+  flex-shrink: 1;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0 15px 12px;
+}
+
+nav a {
+  background-color: #fff;
+  border: 1px solid #888;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.6rem;
+  text-transform: uppercase; 
+  padding: 7px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  box-shadow: inset 0 -1px 0 #ccc;
+}
+
+nav a:hover {
+  background-color: #e5e5e5;
+  color: black;
+}
+
+nav a:hover {
+  background-color: #e5e5e5;
+  border-color: #000;
+}
+
+/* Hit Counter Styles */
+.hit-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-dark); /* Text color */
+  padding: 0;
+}
+
+.hit-count {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8rem;
+}
+
+.hit-label {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 0.7rem;
+}
+
