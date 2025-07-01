@@ -1,9 +1,11 @@
 ---
 layout: layout.liquid
-title: Contact Jonathan Wold
-permalink: /contact/
+title: Colophon
+permalink: /colophon/
 ---
 
-# Contact
+# Colophon
 
-Contact page content will go here.
+Colophon will go here.
+
+<!-- Give credit to code pen source -->
