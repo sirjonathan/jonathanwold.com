@@ -11,6 +11,13 @@ body {
   overflow-x: auto;
 }
 
+/* Override display: flex, but only on iOS */
+@media screen and (max-device-width: 1024px) and (-webkit-touch-callout: none) {
+  body {
+    display: block !important;
+  }
+}
+
 #background-wrapper {
   min-width: 900px;
   min-height: 600px;
