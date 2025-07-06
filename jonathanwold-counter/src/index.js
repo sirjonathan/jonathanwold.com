@@ -13,6 +13,20 @@ export default {
 	 const url = new URL(request.url);
 	 const path = url.pathname;
 
+	 const corsHeaders = {
+	   "Access-Control-Allow-Origin": "*", // or restrict to "https://dev.jonathanwold.com"
+	   "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+	   "Access-Control-Allow-Headers": "Content-Type"
+	 };
+
+	 // Handle preflight (CORS OPTIONS request)
+	 if (request.method === "OPTIONS") {
+	   return new Response(null, {
+		 status: 204,
+		 headers: corsHeaders
+	   });
+	 }
+
 	 const key = `views:${path}`;
 	 let views = await env.PAGE_VIEWS.get(key);
 	 views = views ? parseInt(views) : 0;
@@ -24,8 +38,8 @@ export default {
 
 	 return new Response(JSON.stringify({ views }), {
 	   headers: {
-		   "Content-Type": "application/json",
-		   "Access-Control-Allow-Origin": "*",
+		 "Content-Type": "application/json",
+		 ...corsHeaders
 	   }
 	 });
    }
