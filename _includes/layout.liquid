@@ -65,7 +65,7 @@
 		  <div class="area five">
 			  
 			  <div class="hit-counter">
-				<span class="hit-count">1337</span>
+				<span class="hit-count" id="cfw-counter">-</span>
 				<span class="hit-label">visitors</span>
 			  </div>
 			  
@@ -89,3 +89,17 @@
   </div>  
 </body>
 </html>
+
+<script>
+  const path = window.location.pathname;
+  fetch('https://jonathanwold-counter.jonathan-211.workers.dev' + path, {
+	method: 'POST'
+  })
+	.then(res => res.json())
+	.then(data => {
+	  document.getElementById('cfw-counter').textContent = data.views;
+	})
+	.catch(err => {
+	  console.error('Failed to load view count', err);
+	});
+</script>

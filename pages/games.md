@@ -6,7 +6,7 @@ permalink: /games/
 
 # Games
 
-Games have been and remain an important part of my life and work. I make time for games on a daily basis and enjoy them as a way to practice <a href="https://jonathanwold.com/luck-skill-and-effort/#values">my personal values</a>. 
+Games are an important part of my life and work. I make time for games daily and enjoy them as a way to practice <a href="https://jonathanwold.com/luck-skill-and-effort/#values">my personal values</a>. 
 
 Games I currently enjoy playing the most:
 
@@ -18,5 +18,7 @@ Games I enjoy watching and sometimes playing:
 
 * Starcraft 2 - Thanks to <a href="https://www.youtube.com/@WinterStarcraft">WinterGaming on YouTube</a>.
 * Age of Empires - Thanks to my deep love for the series and <a href="https://www.youtube.com/@T90Official">T90 on YouTube</a>.
+
+And, a couple of times per year, I love Twilight Imperium with friends.
 
 _Updated July 6, 2025_
