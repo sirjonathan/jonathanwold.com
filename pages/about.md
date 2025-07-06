@@ -6,4 +6,3 @@ permalink: /about/
 
 # About
 
-About page content will go here.

@@ -6,12 +6,17 @@ permalink: /games/
 
 # Games
 
-Games I currently enjoy playing:
+Games have been and remain an important part of my life and work. I make time for games on a daily basis and enjoy them as a way to practice <a href="https://jonathanwold.com/luck-skill-and-effort/#values">my personal values</a>. 
 
-* Polytopia
-* Brawl Stars
+Games I currently enjoy playing the most:
+
+* <a href="https://polytopia.io/">Polytopia</a> - A turn-based strategy game I play with friends.
+* <a href="https://supercell.com/en/games/brawlstars/">Brawl Stars</a> - An arena game I play with our kids.
+* <a href="https://gridpop.co/isle/">Isle of Arrows</a> - A tower-defense puzzle game. 
 
 Games I enjoy watching and sometimes playing:
 
-* Starcraft 2 
-* Age of Empires 
+* Starcraft 2 - Thanks to <a href="https://www.youtube.com/@WinterStarcraft">WinterGaming on YouTube</a>.
+* Age of Empires - Thanks to my deep love for the series and <a href="https://www.youtube.com/@T90Official">T90 on YouTube</a>.
+
+_Updated July 6, 2025_
