@@ -2,9 +2,11 @@
 
 A work in progress. This is my playground for the new jonathanwold.com.
 
+## Getting Started on a New Machine
 
-Notes for myself:
-
-June 28
-
-Added 'start' script to packaged.json. Now I can use 'npm start' to get things up and running.
+1. Install Node.js
+   - Recommended: `brew install node` (macOS)
+   - Or download from: https://nodejs.org
+2. Clone this repo locally.
+3. Install dependencies via 'npm install'
+4. Start the server 'npm start'

@@ -105,14 +105,30 @@ body[class*="style-"] a:hover {
 }
 
 .area.one p {
-  margin-bottom: 1em;
   max-width: 60ch;
 }
 
-.area.one p.signature {
+.home .area.one p {
+  margin-bottom: 1em;
+}
+.home .area.one p.signature {
   font-style: italic;
   text-align: left;
 }
+
+/* Inner pages styles */
+.page .area.one  h1 {
+  margin: 0px;
+}
+
+.page .area.one p {
+  margin-bottom: 0px;
+}
+
+.page.values .area.one ol {
+
+}
+
 .area.two {
   grid-area: two;
   display: flex;

@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.bunny.net">
   <link href="https://fonts.bunny.net/css?family=eb-garamond:400,400i,500i|jost:400i,500|open-sans:500" rel="stylesheet" />
 </head>
-<body class="style-coolblue">
+{% assign slug = page.fileSlug | default: '' %}
+<body class="style-coolblue {% if slug != '' %}page {{ slug }}{% else %}home{% endif %}">
   <div id="background-wrapper">
 		
 		<div class="container">
