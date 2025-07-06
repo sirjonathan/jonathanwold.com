@@ -10,24 +10,18 @@
 
 export default {
    async fetch(request, env) {
-	 const url = new URL(request.url);
-	 const path = url.pathname;
-
 	 const corsHeaders = {
-	   "Access-Control-Allow-Origin": "*", // or restrict to "https://dev.jonathanwold.com"
+	   "Access-Control-Allow-Origin": "*",
 	   "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
 	   "Access-Control-Allow-Headers": "Content-Type"
 	 };
 
-	 // Handle preflight (CORS OPTIONS request)
 	 if (request.method === "OPTIONS") {
-	   return new Response(null, {
-		 status: 204,
-		 headers: corsHeaders
-	   });
+	   return new Response(null, { status: 204, headers: corsHeaders });
 	 }
 
-	 const key = `views:${path}`;
+	 // Set a global key
+	 const key = "views:total";
 	 let views = await env.PAGE_VIEWS.get(key);
 	 views = views ? parseInt(views) : 0;
 

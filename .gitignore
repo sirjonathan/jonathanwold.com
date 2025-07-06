@@ -1,4 +1,4 @@
-# Node modules (never commit)
+# Node modules 
 node_modules/
 
 # Eleventy output
@@ -15,3 +15,6 @@ yarn-error.log*
 # VS Code or Nova settings
 .vscode/
 .nova/
+
+# Counter
+counter/.wrangler/

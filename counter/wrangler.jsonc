@@ -1,0 +1,20 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "jonathanwold-counter",
+	"main": "index.js",
+	"compatibility_date": "2025-07-05",
+	"observability": {
+		"enabled": true
+	},
+	"kv_namespaces": [
+		{
+		  "binding": "PAGE_VIEWS",
+		  "id": "c3b3a8bb153c4736bdf913f5eb14d4e9",
+		  "preview_id": "b085085077cd4f7587f56bf9df1fe19d"
+		}
+	  ]
+}
