@@ -20,5 +20,3 @@ Games I enjoy watching and sometimes playing:
 * Age of Empires - Thanks to my deep love for the series and <a href="https://www.youtube.com/@T90Official">T90 on YouTube</a>.
 
 And, a couple of times per year, I love Twilight Imperium with friends.
-
-_Updated July 6, 2025_
