@@ -12,7 +12,7 @@ Games I currently enjoy playing the most:
 
 * <a href="https://polytopia.io/">Polytopia</a> - A turn-based strategy game I play with friends.
 * <a href="https://supercell.com/en/games/brawlstars/">Brawl Stars</a> - An arena game I play with our kids.
-* <a href="https://gridpop.co/isle/">Isle of Arrows</a> - A tower-defense puzzle game. 
+* <a href="https://supercell.com/en/games/clashofclans/">Clash of Clans</a> - A semi-guilty pleasure.
 
 Games I enjoy watching and sometimes playing:
 

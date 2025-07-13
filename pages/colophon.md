@@ -17,4 +17,4 @@ The tools and resources I used included:
 * CloudFlare - Hosting via CloudFlare Pages. 
 * BigScoots - Hosting for my WordPress blog.
 
-My fonts are EB Garamond, Jost, and Open Sans - served up by Bunny.net.
+My fonts are EB Garamond, Jost, and Open Sans, served up by Bunny.net.

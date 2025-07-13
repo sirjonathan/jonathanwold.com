@@ -10,4 +10,4 @@ Podcasting has been a part of my life for the past 5+ years and remains somethin
 
 I'm also a co-host on <a href="https://openchannels.fm/">Open Channels</a>.
 
-Want to invite me to be a guest on a podcast? I'm happy to if my schedule allows, just <a href="/contact/">contact me</a>.
+Want to have me as a guest on a podcast?<a href="/contact/">Contact me</a>.
