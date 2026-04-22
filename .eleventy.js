@@ -2,6 +2,7 @@ module.exports = function(eleventyConfig) {
 	
   eleventyConfig.addPassthroughCopy("styles");
   eleventyConfig.addPassthroughCopy({ "assets/images": "images" });
+  eleventyConfig.addPassthroughCopy({ "assets/js": "js" });
 
   return {
 	dir: {

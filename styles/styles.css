@@ -220,22 +220,23 @@ body[class*="style-"] a:hover {
   text-align: center;
   color: var(--accent-dark); /* Tie into theme */
   letter-spacing: 1px;
-  margin: 10px 0 0 0;;
+  margin: 0;
 }
 
 /* Style for the book citation container */
 a.book {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  margin: 0.5rem 0;
+  margin: 0;
+  padding: 0 0.5rem;
 }
 
 /* Style for the book title */
 a.book cite {
   font-style: italic;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #333;
   text-align: center;
   text-decoration: underline;
@@ -421,5 +422,133 @@ nav a:hover {
   font-weight: 400;
   font-style: italic;
   font-size: 0.7rem;
+}
+
+/* Warp Overlay */
+.warp-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  visibility: hidden;
+  --warp-x: 50%;
+  --warp-y: 50%;
+}
+
+.warp-overlay.is-active {
+  visibility: visible;
+}
+
+.warp-fade {
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 0;
+}
+
+html.warp-inbound body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: #000;
+  z-index: 99998;
+  pointer-events: none;
+}
+
+.warp-particles {
+  position: absolute;
+  left: var(--warp-x);
+  top: var(--warp-y);
+}
+
+.warp-particle {
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.7);
+  opacity: 0;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+.warp-vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at var(--warp-x) var(--warp-y),
+    transparent 0%,
+    transparent 25%,
+    rgba(0, 0, 0, 0.85) 75%,
+    #000 100%
+  );
+  opacity: 0;
+}
+
+/* Under Construction */
+.portal .area.one {
+  padding: 0;
+  overflow: hidden;
+}
+
+.under-construction {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-one);
+}
+
+.uc-stripes {
+  height: 18px;
+  flex-shrink: 0;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #f5c518 0,
+    #f5c518 14px,
+    #1a1a1a 14px,
+    #1a1a1a 28px
+  );
+  background-size: 40px 40px;
+  animation: uc-stripes-scroll 1.4s linear infinite;
+  box-shadow: 0 0 0 1px #1a1a1a inset;
+}
+
+.uc-stripes-bottom {
+  animation-direction: reverse;
+}
+
+@keyframes uc-stripes-scroll {
+  from { background-position: 0 0; }
+  to   { background-position: 40px 0; }
+}
+
+.uc-scene {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  min-height: 0;
+}
+
+.uc-scene h1 {
+  margin-top: 0;
+}
+
+.uc-image {
+  display: block;
+  max-width: 100%;
+  max-height: 230px;
+  align-self: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .uc-stripes { animation: none; }
 }
 

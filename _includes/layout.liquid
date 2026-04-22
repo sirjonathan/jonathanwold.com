@@ -9,6 +9,16 @@
   <link id="theme-stylesheet" rel="stylesheet" href="/styles/styles.css" />
   <link rel="preconnect" href="https://fonts.bunny.net">
   <link href="https://fonts.bunny.net/css?family=eb-garamond:400,400i,500i|jost:400i,500|open-sans:500" rel="stylesheet" />
+  <script>
+    (function () {
+      try {
+        if (sessionStorage.getItem('portalWarpIn')) {
+          document.documentElement.classList.add('warp-inbound');
+          setTimeout(function () { document.documentElement.classList.remove('warp-inbound'); }, 2000);
+        }
+      } catch (_) {}
+    })();
+  </script>
 </head>
 {% assign slug = page.fileSlug | default: '' %}
 <body class="style-coolblue {% if slug != '' %}page {{ slug }}{% else %}home{% endif %}">
@@ -56,9 +66,9 @@
 		  <div class="area four">  
 			  <h3>Book of the Month</h3>
 			  
-			 <a class="book" href="https://www.penguinrandomhouse.com/books/599856/mark-twain-by-ron-chernow/?_gl=1*1i7d19i*_gcl_au*MjExMzUyMjI5MS4xNzUxMTMyNDE1/">
-				 <cite>Mark Twain</cite>
-				<span class="author">Ron Chernow</span>
+			 <a class="book" href="https://mattdinniman.com/books/a-parade-of-horribles/">
+				 <cite>A Parade of Horribles</cite>
+				<span class="author">Matt Dinniman</span>
 			</a>	  			  
 				
 		  </div>
@@ -102,3 +112,6 @@
 	  console.error('Failed to load view count', err);
 	});
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+<script src="/js/portal-warp.js" defer></script>
