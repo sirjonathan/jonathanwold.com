@@ -10,9 +10,10 @@ Games are an important part of my life and work. I make time for games daily and
 
 Games I currently enjoy playing the most:
 
-* <a href="https://polytopia.io/">Polytopia</a> - A turn-based strategy game I play with friends.
+* <a href="https://store.steampowered.com/app/2868840/Slay_the_Spire_2/">Slay the Spire 2</a> - A delightfully hard deck builder on Steam.
 * <a href="https://supercell.com/en/games/brawlstars/">Brawl Stars</a> - An arena game I play with our kids.
-* <a href="https://supercell.com/en/games/clashofclans/">Clash of Clans</a> - A semi-guilty pleasure.
+* <a href="https://polytopia.io/">Polytopia</a> - A turn-based strategy game I play with friends.
+
 
 Games I enjoy watching and sometimes playing:
 

@@ -9,16 +9,12 @@ permalink: /now/
 
 After several <a href="/blog/loss-and-sorrow/">especially difficult years</a>, I am doing well, living out <a href="/values/">my values</a>.
 
-My business focus now includes:
+I joined the team at <a href="https://convesio.com">Convesio</a> in early 2026, where I now lead business development.
 
-* <a href="https://guildenberg.com">Guildenberg</a> - Ongoing investment in the WordPress ecosystem.
-* <a href="http://prettygood.fm">Pretty Good Podcasts</a> - Creating <a href="https://crossword.fm">Crossword</a> and growing the network.
-* <a href="https://bluevineyard.com">Blue Vineyard</a> - A long-term investment in the Adventist ecosystem.
-* <a href="https://bloomandbuild.kids">Bloom and Build</a> - Supporting Amanda's education and childcare foray.
-* Lexomatic - A legal-tech focused startup with friends.
+As time allows, I continue <a href="http://prettygood.fm">working on podcasts</a> and serving as an advisor to companies I've invested in, including <a href="https://pigeon.io">Pigeon</a> and <a href="https://bluevineyard.com">Blue Vineyard</a>.
 
-Beyond that, I'm reading regularly, <a href="/games/">playing games</a>, enjoying time with <a href="https://amandamacumber.me/">Amanda</a> and our kids, and doing what I enjoy, including working on this website now and then.
+Beyond that, I make time for <a href="/games/">playing games</a>, enjoying time with <a href="https://amandamacumber.me/">Amanda</a> and our kids (including our newborn!), and doing what I enjoy, including working on this website now and then.
 
 I've also re-enrolled in college after a 20 year hiatus and am working my way towards an MBA, with a finance emphasis.
 
-Last updated July 12, 2025. 
+Last updated April 21, 2026. 
